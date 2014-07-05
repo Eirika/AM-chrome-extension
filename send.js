@@ -4,8 +4,7 @@ chrome.tabs.getSelected(null, function(tab) {
       type: "POST",
       url: "http://musique.amoki.fr",
       data: {
-        'url': tab.url,
-        'add_url': true
+        'url': tab.url
       },
       success: function(data) {
           console.log(data);
