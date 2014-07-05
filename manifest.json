@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Amoki-Muisque",
+  "description": "Remote for Amoki-Musique",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "externally_connectable": {
+     "ids": [
+      "*"
+    ],
+    "matches": [
+      "http://musique.amoki.fr/*",
+      "http://127.0.0.1:8000/*"
+    ]
+  }
+}
