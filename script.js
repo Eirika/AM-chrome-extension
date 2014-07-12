@@ -1,8 +1,14 @@
+var url;
+
+chrome.storage.sync.get('url', function(items) {
+  url = items.url;
+});
+
 chrome.tabs.getSelected(null, function(tab) {
   if(tab.url.indexOf("https://youtube.com" !== -1)) {
     jQuery.ajax({
       type: "POST",
-      url: "http://musique.amoki.fr",
+      url: url,
       data: {
         'url': tab.url
       },

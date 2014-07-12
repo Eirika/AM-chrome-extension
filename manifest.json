@@ -5,20 +5,16 @@
   "description": "Remote for Amoki-Musique",
   "version": "0.1",
 
+  "options_page": "options.html",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "tabs"
-  ],
-  "externally_connectable": {
-     "ids": [
-      "*"
-    ],
-    "matches": [
-      "http://musique.amoki.fr/*",
-      "http://127.0.0.1:8000/*"
-    ]
-  }
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "chrome://favicon/",
+    "storage"
+  ]
 }
