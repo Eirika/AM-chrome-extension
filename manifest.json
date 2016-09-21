@@ -4,8 +4,11 @@
   "name": "Amoki-Music",
   "description": "Remote for Amoki-Music",
   "version": "0.1",
-
-  "options_page": "options.html",
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery.js", "scripts.js"]
+  },
+  // "options_page": "options.html",
   "browser_action": {
     "default_icon": "icon48.png",
     "default_popup": "popup.html"
@@ -20,6 +23,7 @@
     "http://*/*",
     "https://*/*",
     "chrome://favicon/",
-    "storage"
+    "storage",
+    "contextMenus"
   ]
 }

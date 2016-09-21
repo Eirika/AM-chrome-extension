@@ -1,7 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src='jquery-2.0.3.min.js'></script>
-    <script src="script.js"></script>
-  </head>
+	<head><title>Amoki Music Options</title></head>
+	<body>
+
+		<label for="url">Amoki Music URL:</label>
+		<input type="text" id="url" value="https://music.amoki.fr">
+		<button id="save">Lock</button>
+		<div id="content">
+			<label for="rooms"></label>
+			<select id="rooms"></select>
+			<label for="pass"></label>
+			<input type="password" name="pass" id="pass">
+			<button id="connect">Connect</button>
+		</div>
+
+
+		<div id="status"></div>
+		<script src="jquery.js"></script>
+		<script src="popup.js"></script>
+	</body>
 </html>
